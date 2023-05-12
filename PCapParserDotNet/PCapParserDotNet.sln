@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools.csproj", "{7C93C70E-D845-4072-A28A-AFB1027D744D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCapParserDotNetGUI", "PCapParserDotNetGUI\PCapParserDotNetGUI.csproj", "{0E1F2D97-DFD1-4DAD-A65B-0FF589D0AEF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCapParserDotNetGUI", "PCapParserDotNetGUI\PCapParserDotNetGUI.csproj", "{0E1F2D97-DFD1-4DAD-A65B-0FF589D0AEF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0E1F2D97-DFD1-4DAD-A65B-0FF589D0AEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E1F2D97-DFD1-4DAD-A65B-0FF589D0AEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E1F2D97-DFD1-4DAD-A65B-0FF589D0AEF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
