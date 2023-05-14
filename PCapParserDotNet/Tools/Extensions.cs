@@ -16,5 +16,11 @@ namespace Tools
 
             return source;
         }
+
+        public static PortInformation GetPortInformation(this byte[] source)
+        {
+            return new PortInformation(BitConverter.ToUInt16(source.ReverseEndianness(0, 1), 0),
+                BitConverter.ToUInt16(source.ReverseEndianness(2, 3), 2));
+        }
     }
 }
