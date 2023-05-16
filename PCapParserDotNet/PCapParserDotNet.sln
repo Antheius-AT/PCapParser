@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PCapParserDotNetGUI", "PCapParserDotNetGUI\PCapParserDotNetGUI.csproj", "{0E1F2D97-DFD1-4DAD-A65B-0FF589D0AEF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUserControls", "..\..\..\..\..\Programming\ConsoleUserControls\ConsoleUserControls\ConsoleUserControls\ConsoleUserControls.csproj", "{5235A97A-0F57-43BA-9930-AD37791DCC56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF71CE7-2102-4385-BC00-ACC3A44EAD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5235A97A-0F57-43BA-9930-AD37791DCC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5235A97A-0F57-43BA-9930-AD37791DCC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5235A97A-0F57-43BA-9930-AD37791DCC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5235A97A-0F57-43BA-9930-AD37791DCC56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
