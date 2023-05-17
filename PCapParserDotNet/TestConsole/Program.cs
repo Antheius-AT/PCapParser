@@ -39,7 +39,17 @@ Console.ReadKey(true);
 
 VisualizeTCPConnetions();
 
-Console.ReadKey(true);
+window.InnerArea.BackgroundColor = ConsoleColor.Black;
+window.InnerArea.ForegroundColor = ConsoleColor.Gray;
+window.Border.RightCharacter = ' ';
+window.Border.LeftCharacter = ' ';
+window.Border.TopCharacter = ' ';
+window.Border.BottomCharacter = ' ';
+
+window.Draw();
+
+Console.ResetColor();
+Console.SetCursorPosition(0, 0);
 
 void VisualizeDNSQueries()
 {
@@ -62,13 +72,25 @@ void VisualizeDNSQueries()
 
 void VisualizeTCPConnetions()
 {
-    listView.Content = parser.TcpSessions.Take(22).Select(p => new TextBlock($"TCP flow von {p.SrcIP}:{p.SourcePort} zu {p.DestIP}:{p.DestinationPort}. Insgesamt {p.TotalBytesTransferred} bytes geschickt")
-    {
-        Height = 1,
-        Width = Console.WindowWidth - 10,
-        TrimText = false,
-    }).ToList();
+    int iteration = 1;
 
-    window.Draw();
-    window.DrawChildren();
+    do
+    {
+        var partition = parser.TcpSessions.Skip(iteration * 20).Take(20);
+
+        listView.Content = partition.Select(p => new TextBlock($"TCP flow von {p.SrcIP}:{p.SourcePort} zu {p.DestIP}:{p.DestinationPort}. Insgesamt {p.TotalBytesTransferred} bytes geschickt")
+        {
+            Height = 1,
+            Width = Console.WindowWidth - 10,
+            TrimText = false,
+        }).ToList();
+
+        window.Draw();
+        window.DrawChildren();
+
+        iteration += 1;
+
+        Console.ReadKey(true);
+    }
+    while (iteration < 5);
 }
