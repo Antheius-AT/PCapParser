@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Programming\ConsoleUserControls\ConsoleUserControls\ConsoleUserControls\ConsoleUserControls.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Desktop\Programmieren\Programmieren\ConsoleUserControls\ConsoleUserControls\ConsoleUserControls.csproj" />
     <ProjectReference Include="..\Tools\Tools.csproj" />
   </ItemGroup>
 
